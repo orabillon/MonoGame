@@ -385,6 +385,13 @@
 /processorParam:TextureFormat=Color
 /build:brique_8_3.png
 
+#begin Font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font.spritefont;PixelFont
+
 #begin particule-etoile2.png
 /importer:TextureImporter
 /processor:TextureProcessor

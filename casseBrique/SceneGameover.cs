@@ -11,14 +11,11 @@ using Microsoft.Xna.Framework.Input;
 
 namespace casseBrique;
 
-public class SceneMenu : Scene
+public class SceneGameover : Scene
 {
-
-    SpriteFont FontMenu; 
-
-     public SceneMenu(Game pGame) : base(pGame)
+     public SceneGameover(Game pGame) : base(pGame)
     {
-        FontMenu = pGame.Content.Load<SpriteFont>("PixelFont");
+        
     }
 
     public override void Update(GameTime gameTime)
@@ -29,7 +26,5 @@ public class SceneMenu : Scene
     public override void Draw(SpriteBatch pBatch)
     {
         base.Draw(pBatch);
-
-        pBatch.DrawString(FontMenu,"Menu",new Vector2(10,10), Color.White);
     }
 }

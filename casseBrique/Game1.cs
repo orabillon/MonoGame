@@ -14,6 +14,7 @@ public class Game1 : Game
     Scene MaSceneCourante;
     SceneMenu MaSceneMenu;
     SceneJeu MaSceneJeu;
+    SceneGameover MaSceneGameover;
         
 
     public Game1()
@@ -39,6 +40,7 @@ public class Game1 : Game
 
         MaSceneMenu = new SceneMenu(this);
         MaSceneJeu = new SceneJeu(this);
+        MaSceneGameover = new SceneGameover(this);
 
         MaSceneCourante = MaSceneMenu;
     }
