@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\scenemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\template\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\assetsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\template\\assetsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,15 +38,29 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssetsManager.cs",
+              "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\AssetsManager.cs",
+              "RelativeDocumentMoniker": "TemplateDemarrage\\Template\\AssetsManager.cs",
+              "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\AssetsManager.cs",
+              "RelativeToolTip": "TemplateDemarrage\\Template\\AssetsManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T16:35:07.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SceneGameOver.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneGameOver.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneGameOver.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneGameOver.cs",
               "RelativeToolTip": "TemplateDemarrage\\SceneGameOver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T20:31:30.463Z"
+              "WhenOpened": "2024-03-15T20:31:30.463Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,9 +70,10 @@
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneGamePlay.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneGamePlay.cs",
               "RelativeToolTip": "TemplateDemarrage\\SceneGamePlay.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T20:29:25.004Z"
+              "WhenOpened": "2024-03-15T20:29:25.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,9 +83,10 @@
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneMenu.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneMenu.cs",
               "RelativeToolTip": "TemplateDemarrage\\SceneMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwA8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T20:22:27.405Z"
+              "WhenOpened": "2024-03-15T20:22:27.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,25 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Scene.cs",
-              "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Scene.cs",
-              "RelativeDocumentMoniker": "TemplateDemarrage\\Template\\Scene.cs",
-              "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Scene.cs",
-              "RelativeToolTip": "TemplateDemarrage\\Template\\Scene.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:45:31.914Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainGame.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\MainGame.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\MainGame.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\MainGame.cs",
               "RelativeToolTip": "TemplateDemarrage\\MainGame.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAADwvzoAAAArAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABkAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T19:40:08.088Z",
               "EditorCaption": ""

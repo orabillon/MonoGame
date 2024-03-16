@@ -13,7 +13,7 @@ namespace TemplateDemarrage
     {
         public SceneMenu(MainGame pGame) : base(pGame)
         {
-            Debug.WriteLine("Scene Menu");
+            
         }
 
         public override void Load()
@@ -33,6 +33,12 @@ namespace TemplateDemarrage
 
         public override void Draw(GameTime gameTime)
         {
+            MainGame.spriteBatch.Begin();
+
+            MainGame.spriteBatch.DrawString(AssetsManager.MainFont, "Ceci est le Menu", new Vector2(1,1), Color.White);
+
+            MainGame.spriteBatch.End();
+            
             base.Draw(gameTime);
         }
     }

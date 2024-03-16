@@ -8,7 +8,7 @@ namespace TemplateDemarrage
     public class MainGame : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        public SpriteBatch spriteBatch;
 
         public GameState gameState;
 
@@ -23,14 +23,17 @@ namespace TemplateDemarrage
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            gameState.ChangeScene(GameState.SceneType.Menu); 
+            gameState.ChangeScene(GameState.SceneType.Menu);
+
+            // Chargement ressource partager
+            AssetsManager.Load(Content);
 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
         }
