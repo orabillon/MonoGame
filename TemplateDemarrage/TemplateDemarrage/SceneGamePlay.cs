@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +12,7 @@ namespace TemplateDemarrage
 {
     public class SceneGamePlay : Scene
     {
+        private KeyboardState _OldkeyboardState;
         public SceneGamePlay(MainGame pGame) : base(pGame)
         {
             Debug.WriteLine("Scene Game Play");
@@ -18,6 +20,8 @@ namespace TemplateDemarrage
 
         public override void Load()
         {
+            _OldkeyboardState = Keyboard.GetState();
+
             base.Load();
         }
 
@@ -28,6 +32,15 @@ namespace TemplateDemarrage
 
         public override void Update(GameTime gameTime)
         {
+            KeyboardState keyboardState = Keyboard.GetState();
+            
+            if(keyboardState.IsKeyDown(Keys.Space) && !_OldkeyboardState.IsKeyDown(Keys.Space))
+            {
+                Debug.WriteLine("space");
+            }
+
+            _OldkeyboardState = keyboardState;
+            
             base.Update(gameTime);
         }
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +12,8 @@ namespace TemplateDemarrage
 {
     public class SceneMenu : Scene
     {
+        private KeyboardState _OldkeyboardState;
+
         public SceneMenu(MainGame pGame) : base(pGame)
         {
             
@@ -18,6 +21,8 @@ namespace TemplateDemarrage
 
         public override void Load()
         {
+            _OldkeyboardState = Keyboard.GetState();
+
             base.Load();
         }
 
@@ -28,6 +33,13 @@ namespace TemplateDemarrage
 
         public override void Update(GameTime gameTime)
         {
+            KeyboardState keyboardState = Keyboard.GetState();
+
+            if(keyboardState.IsKeyDown(Keys.Enter) && !_OldkeyboardState.IsKeyDown(Keys.Enter)) {
+                _OldkeyboardState = keyboardState;
+                MainGame.gameState.ChangeScene(GameState.SceneType.Gameplay);
+            }
+            
             base.Update(gameTime);
         }
 
