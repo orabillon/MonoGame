@@ -11,14 +11,28 @@ namespace TemplateDemarrage.Template
     {
         protected MainGame MainGame {  get; set; }
 
+        protected List<IActor> listActors;
+
         protected Scene(MainGame pGame) {
             MainGame = pGame;
+            listActors = new List<IActor>();
         }
 
         public virtual void Load() { }
         public virtual void UnLoad() { }
-        public virtual void Update(GameTime gameTime) { }
-        public virtual void Draw(GameTime gameTime) { }
+        public virtual void Update(GameTime gameTime) {
+            foreach (var actor in listActors)
+            {
+                actor.Update(gameTime); 
+            }
+        }
+        public virtual void Draw(GameTime gameTime) {
+        
+            foreach (var actor in listActors)
+            {
+                actor.Draw(MainGame.spriteBatch);   
+            }
+        }
         
     }
 }

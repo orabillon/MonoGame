@@ -4,9 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/button.png</File>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/cool.mp3</File>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/explode.wav</File>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/meteor.png</File>
     <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/PixelMaster.spritefont</File>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/ship.png</File>
+    <File>C:/Users/orabi/Documents/GitHub/MonoGame/TemplateDemarrage/TemplateDemarrage/Content/techno.mp3</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

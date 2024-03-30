@@ -33,11 +33,7 @@ namespace TemplateDemarrage
 
         public override void Draw(GameTime gameTime)
         {
-            MainGame.spriteBatch.Begin();
-
             MainGame.spriteBatch.DrawString(AssetsManager.MainFont, "Perdu", new Vector2(1, 1), Color.White);
-
-            MainGame.spriteBatch.End();
 
             base.Draw(gameTime);
         }
