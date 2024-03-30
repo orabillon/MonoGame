@@ -12,7 +12,9 @@ namespace TemplateDemarrage
 {
     public class SceneMenu : Scene
     {
-        private KeyboardState _OldkeyboardState;
+        private KeyboardState _OldKeyboardState;
+        private GamePadState _OldGamePadState;
+
 
         public SceneMenu(MainGame pGame) : base(pGame)
         {
@@ -21,7 +23,9 @@ namespace TemplateDemarrage
 
         public override void Load()
         {
-            _OldkeyboardState = Keyboard.GetState();
+            _OldKeyboardState = Keyboard.GetState();
+            _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
+
 
             base.Load();
         }
@@ -33,13 +37,35 @@ namespace TemplateDemarrage
 
         public override void Update(GameTime gameTime)
         {
+
+            GamePadCapabilities capabilities = GamePad.GetCapabilities(PlayerIndex.One);
+            GamePadState gamePadState;
+
+            bool ButA = false; // X
+
+
+
+            if (capabilities.IsConnected)
+            {
+                gamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
+
+                if (gamePadState.IsButtonDown(Buttons.A) && !_OldGamePadState.IsButtonDown(Buttons.A))
+                {
+                   ButA = true;
+                }
+
+                _OldGamePadState = gamePadState;
+
+            }
+
             KeyboardState keyboardState = Keyboard.GetState();
 
-            if(keyboardState.IsKeyDown(Keys.Enter) && !_OldkeyboardState.IsKeyDown(Keys.Enter)) {
-                _OldkeyboardState = keyboardState;
+            if((keyboardState.IsKeyDown(Keys.Enter) && !_OldKeyboardState.IsKeyDown(Keys.Enter)) || ButA) {           
                 MainGame.gameState.ChangeScene(GameState.SceneType.Gameplay);
             }
-            
+
+            _OldKeyboardState = keyboardState;
+
             base.Update(gameTime);
         }
 
