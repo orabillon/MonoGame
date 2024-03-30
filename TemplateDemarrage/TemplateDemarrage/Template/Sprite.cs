@@ -13,14 +13,17 @@ namespace TemplateDemarrage.Template
         // Iactor
         public Vector2 Position { get; set; }
         public Rectangle BoundingBox { get; private set; }
+        public float velociteX { get; set; }
+        public float velociteY { get; set; }
 
         // sprite
         public Texture2D Texture { get; }
 
-        public Sprite(Texture2D pTexture, Vector2 pPosition)
+        public Sprite(Texture2D pTexture)
         {
             Texture = pTexture;
-            Position = pPosition;
+            velociteX = 0;
+            velociteY = 0;
         }
 
         public void Draw(SpriteBatch pSpriteBatch)
@@ -30,6 +33,7 @@ namespace TemplateDemarrage.Template
 
         public void Update(GameTime gameTime)
         {
+            Move(velociteX, velociteY);
             BoundingBox = new Rectangle((int)Position.X, (int)Position.Y, Texture.Width, Texture.Height);
         }
 

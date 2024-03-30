@@ -15,7 +15,8 @@ namespace TemplateDemarrage
     {
         private KeyboardState _OldkeyboardState;
         private GamePadState _OldGamePadState;
-        private Hero Hero; 
+        private Hero Hero;
+        private Rectangle screen;
 
         public SceneGamePlay(MainGame pGame) : base(pGame)
         {
@@ -27,9 +28,18 @@ namespace TemplateDemarrage
             _OldkeyboardState = Keyboard.GetState();
             _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
 
-            Rectangle screen = MainGame.Window.ClientBounds;
-            Texture2D text = MainGame.Content.Load<Texture2D>("Ship");
+            screen = MainGame.Window.ClientBounds;
 
+            Texture2D texMeteor = MainGame.Content.Load<Texture2D>("meteor");
+
+            for (int i = 0; i < 20; i++)
+            {
+                Meteor m = new Meteor(texMeteor);
+                m.Position = new Vector2(Utils.getInt(0,screen.Width - texMeteor.Width), Utils.getInt(0, screen.Height - texMeteor.Height));
+                listActors.Add(m);
+            }
+
+            Texture2D text = MainGame.Content.Load<Texture2D>("Ship");
             Hero = new Hero(text, (screen.Width / 2) - text.Width / 2, (screen.Height / 2) - text.Height / 2);
             listActors.Add(Hero);
 
@@ -43,6 +53,33 @@ namespace TemplateDemarrage
 
         public override void Update(GameTime gameTime)
         {
+            foreach (var actor in listActors)
+            {
+                if(actor is Meteor m) {
+                    if (m.Position.X < 0)
+                    {
+                        m.Position = new Vector2(0, m.Position.Y);
+                        m.velociteX *= -1;
+                    }
+                    if(m.Position.X + m.BoundingBox.Width > screen.Width) {
+                        m.velociteX *= -1;
+                        m.Position = new Vector2(screen.Width - m.BoundingBox.Width, m.Position.Y);
+                    }
+                    if (m.Position.Y < 0)
+                    {
+                        m.Position = new Vector2(m.Position.X, 0);
+                        m.velociteY *= -1;
+                    }
+                    if (m.Position.Y + m.BoundingBox.Height > screen.Height)
+                    {
+                        m.velociteY *= -1;
+                        m.Position = new Vector2(m.Position.X, screen.Height - m.BoundingBox.Height);
+
+                    }
+                }
+                
+            }
+
             GamePadCapabilities capabilities = GamePad.GetCapabilities(PlayerIndex.One);
             GamePadState gamePadState;
 

@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\scenegameplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\meteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\meteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\template\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\template\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\scenemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\scenemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\scenegameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\scenegameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\template\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\template\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|c:\\users\\orabi\\documents\\github\\monogame\\templatedemarrage\\templatedemarrage\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD9B07F-8615-4426-9BDB-DBAD71C88F60}|TemplateDemarrage\\TemplateDemarrage.csproj|solutionrelative:templatedemarrage\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Utils.cs",
+              "RelativeDocumentMoniker": "TemplateDemarrage\\Template\\Utils.cs",
+              "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Utils.cs",
+              "RelativeToolTip": "TemplateDemarrage\\Template\\Utils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T16:01:50.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Meteor.cs",
+              "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Meteor.cs",
+              "RelativeDocumentMoniker": "TemplateDemarrage\\Meteor.cs",
+              "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Meteor.cs",
+              "RelativeToolTip": "TemplateDemarrage\\Meteor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T15:50:21.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "SceneGameOver.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneGameOver.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneGameOver.cs",
@@ -50,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SceneMenu.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneMenu.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneMenu.cs",
@@ -58,12 +92,11 @@
               "RelativeToolTip": "TemplateDemarrage\\SceneMenu.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T08:01:34.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T08:01:34.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainGame.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\MainGame.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\MainGame.cs",
@@ -71,8 +104,7 @@
               "RelativeToolTip": "TemplateDemarrage\\MainGame.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAEEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T08:00:51.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T08:00:51.544Z"
             },
             {
               "$type": "Document",
@@ -82,34 +114,36 @@
               "RelativeDocumentMoniker": "TemplateDemarrage\\SceneGamePlay.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\SceneGamePlay.cs",
               "RelativeToolTip": "TemplateDemarrage\\SceneGamePlay.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAAE0AAAAgAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEsAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T07:39:36.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Hero.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Hero.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\Hero.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Hero.cs",
               "RelativeToolTip": "TemplateDemarrage\\Hero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T07:36:22.653Z"
+              "WhenOpened": "2024-03-30T07:36:22.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Sprite.cs",
               "RelativeDocumentMoniker": "TemplateDemarrage\\Template\\Sprite.cs",
               "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\TemplateDemarrage\\TemplateDemarrage\\Template\\Sprite.cs",
               "RelativeToolTip": "TemplateDemarrage\\Template\\Sprite.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABsAAAA8AAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABkAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T07:04:31.382Z"
+              "WhenOpened": "2024-03-30T07:04:31.382Z",
+              "EditorCaption": ""
             }
           ]
         }

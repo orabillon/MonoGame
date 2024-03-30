@@ -13,9 +13,10 @@ namespace TemplateDemarrage
     {
         public int Energy { get; set; }
 
-        public Hero(Texture2D pTexture, int pX = 0, int pY = 0) : base(pTexture, new Vector2(pX, pY))
+        public Hero(Texture2D pTexture, int pX = 0, int pY = 0) : base(pTexture)
         {
             Energy = 100;
+            Position = new Vector2(pX, pY);
         }
 
         
