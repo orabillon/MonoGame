@@ -24,6 +24,7 @@ namespace TemplateDemarrage
         {
             // TODO: Add your initialization logic here
             gameState.ChangeScene(GameState.SceneType.Menu);
+            IsMouseVisible = true;
 
             // Chargement ressource partager
             AssetsManager.Load(Content);

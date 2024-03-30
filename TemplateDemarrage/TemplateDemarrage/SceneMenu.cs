@@ -14,6 +14,7 @@ namespace TemplateDemarrage
     {
         private KeyboardState _OldKeyboardState;
         private GamePadState _OldGamePadState;
+        private MouseState _OldMouseState;
 
 
         public SceneMenu(MainGame pGame) : base(pGame)
@@ -25,6 +26,7 @@ namespace TemplateDemarrage
         {
             _OldKeyboardState = Keyboard.GetState();
             _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
+            _OldMouseState = Mouse.GetState();
 
 
             base.Load();
@@ -65,6 +67,16 @@ namespace TemplateDemarrage
             }
 
             _OldKeyboardState = keyboardState;
+
+            MouseState mouseState = Mouse.GetState();
+
+            // Debug.WriteLine($"Position de la souris : X {mouseState.X} - Y {mouseState.Y}");
+
+            if (mouseState.LeftButton == ButtonState.Pressed && _OldMouseState.LeftButton != ButtonState.Pressed) {
+                Debug.WriteLine("Bouton enffonce");
+            }
+
+            _OldMouseState = mouseState;
 
             base.Update(gameTime);
         }
