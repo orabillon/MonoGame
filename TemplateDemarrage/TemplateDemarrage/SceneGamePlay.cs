@@ -14,6 +14,7 @@ namespace TemplateDemarrage
     public class SceneGamePlay : Scene
     {
         private KeyboardState _OldkeyboardState;
+        private GamePadState _OldGamePadState;
         private Hero Hero; 
 
         public SceneGamePlay(MainGame pGame) : base(pGame)
@@ -24,6 +25,7 @@ namespace TemplateDemarrage
         public override void Load()
         {
             _OldkeyboardState = Keyboard.GetState();
+            _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
 
             Rectangle screen = MainGame.Window.ClientBounds;
             Texture2D text = MainGame.Content.Load<Texture2D>("Ship");
@@ -41,6 +43,46 @@ namespace TemplateDemarrage
 
         public override void Update(GameTime gameTime)
         {
+            GamePadCapabilities capabilities = GamePad.GetCapabilities(PlayerIndex.One);
+            GamePadState gamePadState;
+
+            bool bButA = false; // X
+            bool bStickLeftUp = false;
+            bool bStickLeftDown = false;
+            bool bStickLeftRight = false;
+            bool bStickLeftLeft = false;
+
+            if (capabilities.IsConnected)
+            {
+                gamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
+
+                if (gamePadState.IsButtonDown(Buttons.A) && !_OldGamePadState.IsButtonDown(Buttons.A))
+                {
+                    bButA = true;
+                }
+
+                if (gamePadState.ThumbSticks.Left.X < -0.5f)
+                {
+                    bStickLeftLeft = true; 
+                }
+                if (gamePadState.ThumbSticks.Left.X > 0.5f)
+                {
+                    bStickLeftRight = true;
+                }
+                if (gamePadState.ThumbSticks.Left.Y < -0.5f)
+                {
+                    bStickLeftDown = true;
+                }
+                if (gamePadState.ThumbSticks.Left.Y > 0.5f)
+                {
+                    bStickLeftUp = true;
+                }
+
+
+                _OldGamePadState = gamePadState;
+
+            }
+
             KeyboardState keyboardState = Keyboard.GetState();
             
             if(keyboardState.IsKeyDown(Keys.Space) && !_OldkeyboardState.IsKeyDown(Keys.Space))
@@ -48,19 +90,19 @@ namespace TemplateDemarrage
                 Debug.WriteLine("space");
             }
 
-            if (keyboardState.IsKeyDown(Keys.Right))
+            if (keyboardState.IsKeyDown(Keys.Right) || bStickLeftRight)
             {
                 Hero.Move(1, 0);
             }
-            if (keyboardState.IsKeyDown(Keys.Left))
+            if (keyboardState.IsKeyDown(Keys.Left) || bStickLeftLeft)
             {
                 Hero.Move(-1, 0);
             }
-            if (keyboardState.IsKeyDown(Keys.Up))
+            if (keyboardState.IsKeyDown(Keys.Up) || bStickLeftUp)
             {
                 Hero.Move(0, -1);
             }
-            if (keyboardState.IsKeyDown(Keys.Down))
+            if (keyboardState.IsKeyDown(Keys.Down) || bStickLeftDown)
             {
                 Hero.Move(0, 1);
             }
