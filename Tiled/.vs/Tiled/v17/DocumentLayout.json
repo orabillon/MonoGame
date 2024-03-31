@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\Tiled\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{654F2E80-293A-4129-BC01-03D2717FB0FC}|Tiled\\Tiled.csproj|c:\\users\\orabi\\documents\\github\\monogame\\tiled\\tiled\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{654F2E80-293A-4129-BC01-03D2717FB0FC}|Tiled\\Tiled.csproj|solutionrelative:tiled\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\Tiled\\Tiled\\Game1.cs",
+              "RelativeDocumentMoniker": "Tiled\\Game1.cs",
+              "ToolTip": "C:\\Users\\orabi\\Documents\\GitHub\\MonoGame\\Tiled\\Tiled\\Game1.cs",
+              "RelativeToolTip": "Tiled\\Game1.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T18:17:43.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
