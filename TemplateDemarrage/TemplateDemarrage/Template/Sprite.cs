@@ -15,10 +15,12 @@ namespace TemplateDemarrage.Template
         public Rectangle BoundingBox { get; private set; }
         public float velociteX { get; set; }
         public float velociteY { get; set; }
+        public bool toRemove { get; set; } =false;
+
 
         // sprite
         public Texture2D Texture { get; }
-
+        
         public Sprite(Texture2D pTexture)
         {
             Texture = pTexture;
@@ -40,6 +42,11 @@ namespace TemplateDemarrage.Template
         public void Move(float pX, float pY)
         {
             Position = new Vector2(Position.X + pX, Position.Y + pY);
+        }
+
+        public virtual void TouchedBy(IActor pBy)
+        {
+            
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -20,6 +21,8 @@ namespace TemplateDemarrage
         private Button Button;
 
         private Rectangle screen;
+
+        private Song musique;
 
 
         public SceneMenu(MainGame pGame) : base(pGame)
@@ -45,11 +48,17 @@ namespace TemplateDemarrage
 
             listActors.Add( Button );
 
+            musique = MainGame.Content.Load<Song>("cool");
+            
+            MediaPlayer.IsRepeating = true; 
+            MediaPlayer.Play( musique );
+
             base.Load();
         }
 
         public override void UnLoad()
         {
+            MediaPlayer.Stop();
             base.UnLoad();
         }
 

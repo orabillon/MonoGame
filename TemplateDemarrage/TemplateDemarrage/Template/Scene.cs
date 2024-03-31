@@ -33,6 +33,11 @@ namespace TemplateDemarrage.Template
                 actor.Draw(MainGame.spriteBatch);   
             }
         }
+
+        public void Clean()
+        {
+            listActors.RemoveAll(item => item.toRemove == true);
+        }
         
     }
 }

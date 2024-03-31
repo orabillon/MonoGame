@@ -19,5 +19,10 @@ namespace TemplateDemarrage.Template
         {
             return RandomGen.Next(pMin, pMax + 1);
         }
+
+        public static bool CollideByBox(IActor pActor1, IActor pActor2)
+        {
+              return pActor1.BoundingBox.Intersects(pActor2.BoundingBox);
+        }
     }
 }

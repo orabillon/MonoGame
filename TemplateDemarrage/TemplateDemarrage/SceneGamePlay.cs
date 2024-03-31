@@ -1,8 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -18,6 +21,10 @@ namespace TemplateDemarrage
         private Hero Hero;
         private Rectangle screen;
 
+        private Song musique;
+        private SoundEffect sndExplode;
+        
+
         public SceneGamePlay(MainGame pGame) : base(pGame)
         {
             Debug.WriteLine("Scene Game Play");
@@ -29,6 +36,12 @@ namespace TemplateDemarrage
             _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
 
             screen = MainGame.Window.ClientBounds;
+
+            sndExplode = MainGame.Content.Load<SoundEffect>("explode");
+            musique = MainGame.Content.Load<Song>("techno");
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Volume = 0.3f;
+            MediaPlayer.Play(musique);
 
             Texture2D texMeteor = MainGame.Content.Load<Texture2D>("meteor");
 
@@ -48,6 +61,8 @@ namespace TemplateDemarrage
 
         public override void UnLoad()
         {
+            MediaPlayer.Stop();
+            
             base.UnLoad();
         }
 
@@ -75,6 +90,20 @@ namespace TemplateDemarrage
                         m.velociteY *= -1;
                         m.Position = new Vector2(m.Position.X, screen.Height - m.BoundingBox.Height);
 
+                    }
+
+                    if(Utils.CollideByBox(m, Hero))
+                    {
+                        Hero.TouchedBy(m);
+                        m.TouchedBy(Hero);
+
+                        if (Hero.Energy < 0)
+                        {
+                            MainGame.gameState.ChangeScene(GameState.SceneType.Gameover);
+                        }
+
+                        m.toRemove = true;
+                        sndExplode.Play();
                     }
                 }
                 
@@ -145,7 +174,13 @@ namespace TemplateDemarrage
             }
 
             _OldkeyboardState = keyboardState;
+
+            Clean();
             
+
+            if(listActors.Count == 1)
+                MainGame.gameState.ChangeScene(GameState.SceneType.Menu);
+
             base.Update(gameTime);
         }
 
