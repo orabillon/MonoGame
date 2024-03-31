@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,10 @@ namespace TemplateDemarrage
         private GamePadState _OldGamePadState;
         private MouseState _OldMouseState;
 
+        private Button Button;
+
+        private Rectangle screen;
+
 
         public SceneMenu(MainGame pGame) : base(pGame)
         {
@@ -28,6 +33,17 @@ namespace TemplateDemarrage
             _OldGamePadState = GamePad.GetState(PlayerIndex.One, GamePadDeadZone.IndependentAxes);
             _OldMouseState = Mouse.GetState();
 
+            screen = MainGame.Window.ClientBounds;
+
+            Button = new Button(MainGame.Content.Load<Texture2D>("button"));
+            Button.Position = new Vector2(
+                    screen.Width / 2 - Button.Texture.Width / 2, 
+                    screen.Height / 2 -  Button.Texture.Height /2
+                );
+
+            Button.onClick = onClikPlay;
+
+            listActors.Add( Button );
 
             base.Load();
         }
@@ -72,9 +88,9 @@ namespace TemplateDemarrage
 
             // Debug.WriteLine($"Position de la souris : X {mouseState.X} - Y {mouseState.Y}");
 
-            if (mouseState.LeftButton == ButtonState.Pressed && _OldMouseState.LeftButton != ButtonState.Pressed) {
-                Debug.WriteLine("Bouton enffonce");
-            }
+           // if (mouseState.LeftButton == ButtonState.Pressed && _OldMouseState.LeftButton != ButtonState.Pressed) {
+           //     Debug.WriteLine("Bouton enffonce");
+           // }
 
             _OldMouseState = mouseState;
 
@@ -86,6 +102,11 @@ namespace TemplateDemarrage
             MainGame.spriteBatch.DrawString(AssetsManager.MainFont, "Ceci est le Menu", new Vector2(1,1), Color.White);
 
             base.Draw(gameTime);
+        }
+
+        public void onClikPlay(Button pSender)
+        {
+            MainGame.gameState.ChangeScene(GameState.SceneType.Gameplay);
         }
     }
 }

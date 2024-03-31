@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TemplateDemarrage.Template
 {
-    internal class Sprite : IActor
+    public class Sprite : IActor
     {
         // Iactor
         public Vector2 Position { get; set; }
@@ -26,12 +26,12 @@ namespace TemplateDemarrage.Template
             velociteY = 0;
         }
 
-        public void Draw(SpriteBatch pSpriteBatch)
+        public virtual void Draw(SpriteBatch pSpriteBatch)
         {
             pSpriteBatch.Draw(Texture,Position,Color.White);
         }
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             Move(velociteX, velociteY);
             BoundingBox = new Rectangle((int)Position.X, (int)Position.Y, Texture.Width, Texture.Height);
