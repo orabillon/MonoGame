@@ -24,6 +24,7 @@ namespace TemplateDemarrage
 
         private Song musique;
 
+        private GCRectangle MonRect;
 
         public SceneMenu(MainGame pGame) : base(pGame)
         {
@@ -52,6 +53,9 @@ namespace TemplateDemarrage
             
             MediaPlayer.IsRepeating = true; 
             MediaPlayer.Play( musique );
+
+            MonRect = new GCRectangle(MainGame, GCRectangle.Type.outline, 50, 50, 100, 20, Color.Purple, Color.Red);
+            listActors.Add( MonRect );
 
             base.Load();
         }
