@@ -1,0 +1,13 @@
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\bin\Debug\net6.0\ornLib.deps.json
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\bin\Debug\net6.0\ornLib.dll
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\bin\Debug\net6.0\ornLib.pdb
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.csproj.AssemblyReference.cache
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.AssemblyInfoInputs.cache
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.AssemblyInfo.cs
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.csproj.CoreCompileInputs.cache
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.sourcelink.json
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.dll
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\refint\ornLib.dll
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ornLib.pdb
+C:\Users\orabi\Documents\GitHub\MonoGame\ornLib\ornLib\obj\Debug\net6.0\ref\ornLib.dll
