@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemplateDemarrage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbf7f02486403594f912687de816a8d1f748bac0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34e80f4fc85518c9f014bb444dd3b43df802635c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemplateDemarrage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemplateDemarrage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
